@@ -10,7 +10,7 @@ const initialState: State = {
 
 type State = {
   isRequestInProgress:boolean,
-requestStep: string | boolean | null,
+requestStep: 'start' | 'pending' | 'finished' | 'idle' ,
 }
 
 type Action =
